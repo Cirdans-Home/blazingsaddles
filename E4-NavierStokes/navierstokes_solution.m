@@ -111,7 +111,7 @@ clear variables
 fprintf('Incompressible flow problem on step domain ...\n')
 % ------------- Viscosity parameter --------------------------------------%
 viscosity= 1/210; % 1/210
-nlmethod = 3; % Picard/Newton/hybrid linearization 1/2/3
+nlmethod = 2; % Picard/Newton/hybrid linearization 1/2/3
 nlmethod=nlmethod-1;
 if nlmethod==0,
     maxit_p=default('number of Picard iterations (default 9)',9);

@@ -1,3 +1,15 @@
 [submodule "ifem"]
 	path = ifem
 	url = https://github.com/lyc102/ifem.git
+[submodule "notebooks/1DLaplacian"]
+	path = notebooks/1DLaplacian
+	url = git@gist.github.com:f93bcc8673c1d0da26aa0372fcf3f03f.git
+[submodule "notebooks/RugeStuben"]
+	path = notebooks/RugeStuben
+	url = git@gist.github.com:974f938203713c66ee69f8173453771f.git
+[submodule "notebooks/aggregation"]
+	path = notebooks/aggregation
+	url = git@gist.github.com:78d0ef25c3cc39e0c3d4a4c4000ea792.git
+[submodule "notebooks/aggregationsolve"]
+	path = notebooks/aggregationsolve
+	url = git@gist.github.com:a90a85fe9a98a908d76e8501fe089427.git

@@ -129,7 +129,7 @@ smoother_params = amg_smoother_params(grid_data, 'PGS', 3);
 smoother_data = amg_smoother_setup(grid_data, smoother_params);
 fprintf("Time to build the smoothers: %1.2e\n",toc);
 % We can visualize the grids we have built by doing:
-[last_level] = amg_coarsen_plot(grid_data,xy);
+[last_level] = amg_coarsen_plot(grid_data);
 % We now have a routine to apply a single V(1,1)-Cycle:
 max_Clevels = 7;  % Maximum number of levels before coarse solve
 x0 = zeros(nu,1); % Initial guess
@@ -146,6 +146,6 @@ maxit = np;
 tol = 1e-6;
 lmax = eigs(Q,1,'largestabs');
 lmin = eigs(Q,1,'smallestabs');
-[p,it,r] = chebyshev(Q, gst, p0, maxit, tol, lmax, lmin);
+[p,it,r] = chebyshev2(Q, gst, p0, maxit, tol, lmax, lmin);
 % Now you can try to assemble together this routine with the other example 
 % with FGMRES to build an incomplete solver.

@@ -146,6 +146,6 @@ maxit = np;
 tol = 1e-6;
 lmax = eigs(Q,1,'largestabs');
 lmin = eigs(Q,1,'smallestabs');
-[p,it,r] = chebyshev2(Q, gst, p0, maxit, tol, lmax, lmin);
+[p,it,r] = chebyshev(Q, gst, p0, maxit, tol, lmax, lmin);
 % Now you can try to assemble together this routine with the other example 
 % with FGMRES to build an incomplete solver.
